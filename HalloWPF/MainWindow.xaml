@@ -1,0 +1,41 @@
+﻿<Window x:Class="HalloWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HalloWPF"
+        mc:Ignorable="d"
+        Title="Mein Fenster" Height="155" Width="268">
+    <Window.Content>
+        <StackPanel x:Name="Spl_Main">
+
+            <Button Content="Hallo, klick mich"
+                x:Name="Btn_KlickMich"
+                Background="HotPink"
+                Margin="20, 10, 5, 1"
+                HorizontalAlignment="Left"
+                Width="150" 
+                    Click="Btn_KlickMich_Click"/>
+
+            <Button>
+                <Button.Content>
+                    <TextBox Width="80"/>
+                </Button.Content>
+
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="LightBlue" Offset="0"/>
+                        <GradientStop Color="Yellow" Offset="0.5"/>
+                        <GradientStop Color="DarkBlue" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+            <Button>
+                Hallo
+            </Button>
+
+        </StackPanel>
+    </Window.Content>
+</Window>
+    
