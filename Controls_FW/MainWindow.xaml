@@ -99,13 +99,13 @@
         <!--Menüs, wie ein Fenster-Menü (Menu) oder ein Kontext-Menü (ContextMenu) werden mit MenuItems befüllt.
         Diese können ihrerseits weitere MenuItems aufnehmen, wodurch sich dann Untermenüs bilden-->
         <Menu>
-            <MenuItem Header="Datei">
-                <MenuItem Header="Neu">
+            <MenuItem Header="_Datei">
+                <MenuItem Header="_Neu">
                     <MenuItem Header="Neu" Click="OpenWindow"/>
                     <MenuItem Header="Dialog" Click="OpenDialogWindow"/>
                 </MenuItem>
-                <MenuItem Header="Speichern"/>
-                <MenuItem Header="Schließen" Click="CloseWindow"/>
+                <MenuItem Header="_Speichern"/>
+                <MenuItem Header="S_chließen" Click="CloseWindow"/>
             </MenuItem>
             <MenuItem Header="Hilfe"/>
         </Menu>

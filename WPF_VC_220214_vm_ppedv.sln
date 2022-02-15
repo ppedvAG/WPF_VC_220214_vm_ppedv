@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02_Controls", "Controls_FW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank_FW\Personendatenbank.csproj", "{C303E089-FD1B-4DC1-8E79-A999F6988893}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Container", "Container\Container.csproj", "{76256989-96A7-443C-921E-B7DD43A7172E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C303E089-FD1B-4DC1-8E79-A999F6988893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C303E089-FD1B-4DC1-8E79-A999F6988893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C303E089-FD1B-4DC1-8E79-A999F6988893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76256989-96A7-443C-921E-B7DD43A7172E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76256989-96A7-443C-921E-B7DD43A7172E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76256989-96A7-443C-921E-B7DD43A7172E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76256989-96A7-443C-921E-B7DD43A7172E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

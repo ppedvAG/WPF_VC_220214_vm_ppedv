@@ -8,8 +8,8 @@
         Title="Neue Person" 
         SizeToContent="Height"
         Width="285" 
-        ResizeMode="NoResize" 
-        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Topmost="True"
         FontSize="14.0">
 
