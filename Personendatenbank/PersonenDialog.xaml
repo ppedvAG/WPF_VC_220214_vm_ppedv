@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Neue Person" 
         SizeToContent="Height"
-        Width="285" 
+        Width="276" MinWidth="150"
         ResizeMode="NoResize" 
         WindowStartupLocation="CenterScreen" 
         Topmost="True"
@@ -23,7 +23,7 @@
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" MinWidth="100"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -87,7 +87,7 @@
             <ComboBoxItem Content="Gelb" Foreground="Yellow"/>
         </ComboBox>
 
-        <StackPanel Margin="2"
+        <!--<StackPanel Margin="2"
                     Grid.Column="1" Grid.Row="5">
             <RadioButton Content="M"
                          GroupName="Rbg_Gender"
@@ -98,7 +98,27 @@
             <RadioButton Content="D"
                          GroupName="Rbg_Gender"
                          VerticalContentAlignment="Center"/>
-        </StackPanel>
+        </StackPanel>-->
+
+        <Grid Grid.Column="1" Grid.Row="5">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <RadioButton Content="M"
+                         GroupName="Rbg_Gender"
+                         VerticalContentAlignment="Center"
+                         Grid.Row="0"/>
+            <RadioButton Content="W"
+                         GroupName="Rbg_Gender"
+                         VerticalContentAlignment="Center"
+                         Grid.Row="1"/>
+            <RadioButton Content="D"
+                         GroupName="Rbg_Gender"
+                         VerticalContentAlignment="Center"
+                         Grid.Row="2"/>
+        </Grid>
 
         <WrapPanel Grid.Row="6" Grid.ColumnSpan="2"
                    HorizontalAlignment="Right" Margin="0,5">
