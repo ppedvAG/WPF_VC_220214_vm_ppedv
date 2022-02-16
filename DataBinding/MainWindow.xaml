@@ -5,15 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBinding"
         mc:Ignorable="d"
-        Title="MainWindow" Height="405" Width="342">
+        Title="MainWindow" Height="476" Width="405"
+        x:Name="Wnd_Main">
     <StackPanel>
 
-        <StackPanel x:Name="Spl_DataContextBeispiel">
+        <StackPanel x:Name="Spl_DataContextBsp">
+            <!--Der DataContext repräsentiert das Datenobjekt, auf welches sich der
+            entsprechende Bereich fokussiert (hier das StackPanel). Innerhalb dieses
+            Bereichs kann per Kurzbindung auf dieses Objekt zugrgriffen werden-->
             <StackPanel.DataContext>
-                <local:Person Vorname="Anna" Nachname="Nass" Alter="35"/>
+                <local:Person Vorname="Anna" Nachname="Meier" Alter="29"/>
             </StackPanel.DataContext>
 
-            <TextBox Text="{Binding Path=Vorname}"/>
+            <TextBox Text="{Binding Vorname}"/>
             <TextBlock Text="{Binding Nachname}"/>
             <TextBlock Text="{Binding Alter}"/>
             <TextBlock Text="{Binding WichtigeTage[0].Year}"/>
@@ -23,10 +27,12 @@
 
         </StackPanel>
 
+        <!--ItemControls können an Listen angebunden werden, durch welche sie mit Objekten
+        befüllt werden-->
         <ListBox x:Name="Lbx_Personen" Height="100"
                  ItemsSource="{Binding Personenliste}"/>
-        <Button Content="Neue Person" x:Name="Btn_Neu" Click="Btn_Neu_Click"/>
-        <Button Content="Lösche Person" x:Name="Btn_Löschen" Click="Btn_Löschen_Click"/>
+        <Button x:Name="Btn_Neu" Content="Neu" Click="Btn_Neu_Click"/>
+        <Button x:Name="Btn_Löschen" Content="Löschen" Click="Btn_Löschen_Click"/>
 
     </StackPanel>
 </Window>

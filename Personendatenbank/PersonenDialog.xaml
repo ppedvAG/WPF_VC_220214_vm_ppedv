@@ -20,10 +20,14 @@
         </LinearGradientBrush>
     </Window.Background>
 
+    <Window.DataContext>
+        <local:Person/>
+    </Window.DataContext>
+
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*" MinWidth="100"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -61,76 +65,82 @@
 
         <TextBox x:Name="Tbx_Vorname"
                  Grid.Column="1"
-                 Margin="2"/>
+                 Margin="2"
+                 Text="{Binding Vorname}"/>
 
         <TextBox x:Name="Tbx_Nachname"
                  Grid.Column="1" Grid.Row="1"
-                 Margin="2"/>
+                 Margin="2"
+                 Text="{Binding Nachname}"/>
 
         <DatePicker x:Name="Dpr_Geburtsdatum"
                     Grid.Column="1" Grid.Row="2"
                     VerticalAlignment="Center"
-                    Margin="2"/>
+                    Margin="2"
+                    SelectedDate="{Binding Geburtsdatum}"/>
 
         <CheckBox x:Name="Cbx_Verheiratet"
                   Grid.Column="1" Grid.Row="3"
                   VerticalAlignment="Center"
-                  Margin="2"/>
+                  Margin="2"
+                  IsChecked="{Binding Verheiratet}"/>
 
         <ComboBox x:Name="Cbb_Lieblingsfarbe"
                   Grid.Column="1" Grid.Row="4"
                   VerticalAlignment="Center"
-                  Margin="2">
+                  Margin="2"
+                  SelectedValue="{Binding Lieblingsfarbe}">
             <ComboBoxItem Content="Grün" Foreground="Green"/>
             <ComboBoxItem Content="Blau" Foreground="Blue"/>
             <ComboBoxItem Content="Rot" Foreground="Red"/>
             <ComboBoxItem Content="Gelb" Foreground="Yellow"/>
         </ComboBox>
 
-        <!--<StackPanel Margin="2"
+        <StackPanel Margin="2"
                     Grid.Column="1" Grid.Row="5">
             <RadioButton Content="M"
                          GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center">
+                <RadioButton.IsChecked>
+                    <Binding Path="Geschlecht">
+                        
+                    </Binding>
+                </RadioButton.IsChecked>
+            </RadioButton>
             <RadioButton Content="W"
                          GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center">
+                <RadioButton.IsChecked>
+                    <Binding Path="Geschlecht">
+                        
+                    </Binding>
+                </RadioButton.IsChecked>
+            </RadioButton>
             <RadioButton Content="D"
                          GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"/>
-        </StackPanel>-->
-
-        <Grid Grid.Column="1" Grid.Row="5">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <RadioButton Content="M"
-                         GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"
-                         Grid.Row="0"/>
-            <RadioButton Content="W"
-                         GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"
-                         Grid.Row="1"/>
-            <RadioButton Content="D"
-                         GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"
-                         Grid.Row="2"/>
-        </Grid>
+                         VerticalContentAlignment="Center">
+                <RadioButton.IsChecked>
+                    <Binding Path="Geschlecht">
+                        
+                    </Binding>
+                </RadioButton.IsChecked>
+            </RadioButton>
+        </StackPanel>
 
         <WrapPanel Grid.Row="6" Grid.ColumnSpan="2"
                    HorizontalAlignment="Right" Margin="0,5">
             <Button x:Name="Btn_Ok"
                     Content="OK"
                     Width="100"
-                    Margin="5,0,0,0"/>
+                    Margin="5,0,0,0"
+                    Click="Btn_Ok_Click"/>
             <Button x:Name="Btn_Abbruch"
                     Content="Abbrechen"
                     Width="100"
-                    Margin="5,0,0,0"/>
+                    Margin="5,0,0,0"
+                    Click="Btn_Abbruch_Click"/>
         </WrapPanel>
     </Grid>
 </Window>
+
 
