@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Trigger"
+        xmlns:uc="clr-namespace:UserControls;assembly=UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="391" Width="341">
-    <StackPanel>
+    <StackPanel Background="{Binding ElementName=ColorPicker_01, Path=PickedColor}">
         <StackPanel.Triggers>
             <!--EventTrigger reagieren auf ein geworfenes RoutedEvent und werden dafür verwendet,
             Storyboards zu starten. EventTrigger sind die einzige Triggerart, die direkt in die 
@@ -54,6 +55,9 @@
         </TextBlock>
 
         <Button x:Name="Btn_Ändern" Click="Btn_Ändern_Click" Content="Ändern"/>
+
+
+        <uc:ColorPicker x:Name="ColorPicker_01"/>
 
     </StackPanel>
 </Window>
