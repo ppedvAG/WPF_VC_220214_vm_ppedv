@@ -57,7 +57,8 @@
         <Button x:Name="Btn_Ändern" Click="Btn_Ändern_Click" Content="Ändern"/>
 
 
-        <uc:ColorPicker x:Name="ColorPicker_01"/>
+        <uc:ColorPicker x:Name="ColorPicker_01" Tap="ColorPicker_01_Tap"/>
+        <Button  Content="Hallo" uc:ColorPicker.Count="3"/>
 
     </StackPanel>
 </Window>
