@@ -25,7 +25,7 @@ namespace MVVM.ViewModel
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         public DetailViewModel()
         {

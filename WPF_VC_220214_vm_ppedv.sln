@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M13_Commands", "Commands\M1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M14_MVVM", "MVVM\M14_MVVM.csproj", "{3C692CBA-6DE5-43DA-9800-B7892DC0429D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M17_MultiThreading", "MultiThreading\M17_MultiThreading.csproj", "{F4F3C017-C504-4FBF-88B3-8776CEEB49ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M16_Animations", "Animations\M16_Animations.csproj", "{93D060E7-3DAD-46AB-80F0-D1747F078E4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{3C692CBA-6DE5-43DA-9800-B7892DC0429D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C692CBA-6DE5-43DA-9800-B7892DC0429D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C692CBA-6DE5-43DA-9800-B7892DC0429D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F3C017-C504-4FBF-88B3-8776CEEB49ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F3C017-C504-4FBF-88B3-8776CEEB49ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F3C017-C504-4FBF-88B3-8776CEEB49ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F3C017-C504-4FBF-88B3-8776CEEB49ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D060E7-3DAD-46AB-80F0-D1747F078E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D060E7-3DAD-46AB-80F0-D1747F078E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D060E7-3DAD-46AB-80F0-D1747F078E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D060E7-3DAD-46AB-80F0-D1747F078E4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
