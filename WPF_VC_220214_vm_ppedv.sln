@@ -33,9 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M09_Validation", "Validatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M11_UserControls", "UserControls\M11_UserControls.csproj", "{22BBD39E-68FE-436F-A169-A60F9D5B43F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands", "Commands\Commands.csproj", "{07DD8EC8-A318-45BA-A5A4-38F6D40E028B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M13_Commands", "Commands\M13_Commands.csproj", "{07DD8EC8-A318-45BA-A5A4-38F6D40E028B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "MVVM\MVVM.csproj", "{3C692CBA-6DE5-43DA-9800-B7892DC0429D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M14_MVVM", "MVVM\M14_MVVM.csproj", "{3C692CBA-6DE5-43DA-9800-B7892DC0429D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
